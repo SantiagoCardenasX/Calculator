@@ -1,0 +1,76 @@
+/* Basic styling for the page background */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #121212; /* Night mode background */
+  }
+  
+  /* Calculator container styling */
+  .calculator {
+    width: 300px; /* Adjusted width for better button alignment */
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  }
+  
+  /* Display styling */
+  #display {
+    height: 60px;
+    background-color: #1e1e1e; /* Darker display for night mode */
+    color: #ffffff;
+    font-size: 2em;
+    text-align: right;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Button grid styling */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  /* Styling for all buttons */
+  .btn {
+    background-color: #444; /* Dark button color for night mode */
+    color: #ffffff;
+    font-size: 1.5em;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* Smooth hover effect */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Hover effect for buttons */
+  .btn:hover {
+    background-color: #666; /* Slightly lighter on hover */
+  }
+  
+  /* Special style for zero button spanning two columns */
+  .zero {
+    grid-column: span 2;
+  }
+  
+  /* Night mode: Colors and contrasts */
+  .btn-operator {
+    background-color: #556080; /* Distinct color for operator buttons */
+  }
+  
+  .btn-clear {
+    background-color: #e57373; /* Clear button in a soft red */
+  }
+  
+  .btn-equal {
+    background-color: #81c784; /* Equal button in a soft green */
+  }
+  
